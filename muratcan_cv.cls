@@ -2,7 +2,7 @@
 % this is inspired by Michael Pollind's Awesome CV 
 % Created from scratch as a much simpler alternative to it to actually learn LaTeX.
 % Might be interpreted as an easier-to-edit or easier-to-understand-what-is-going-on version of it.
-\author{Murat Can Karacabey}
+\author{mc}
 \RequirePackage[dvipsnames]{xcolor} % moved here I guess article class causes option clash with xcolor if used after loading the class
 \LoadClass[11pt]{article}
 \NeedsTeXFormat{LaTeX2e}
@@ -20,7 +20,9 @@
 \RequirePackage{ifthen}
 \RequirePackage{lipsum}
 \RequirePackage{array}
+\RequirePackage[utf8]{inputenc}
 \pagestyle{empty}
+\setlength{\parindent}{0pt} 
 
 %Setup
 
@@ -67,7 +69,7 @@
     \savebox{\picbox}{%
     \includegraphics[scale=#1]{#2}}% 
     \tikz\node [draw, circle,%
-    line width=4pt, color=white,% 
+    line width=6pt, color=white,% 
     minimum width=\wd\picbox,minimum height=\ht\picbox,%
     path picture={ \node at (path picture bounding box.center)% 
     {\usebox{\picbox}};}]% 
@@ -100,7 +102,7 @@
 }
 
 \newcommand\coverlettersubview{
-\begin{tabular}{>{\scshape \bfseries \color{\@themecolor}}l  >{\small }l}
+\begin{tabular}{>{\scshape \bfseries \color{\@themecolor}}l  >{\small }l}
 Company: & \@companyname \\
 Position: & \@claimedposition \\
 \end{tabular}
@@ -137,6 +139,7 @@ Position: & \@claimedposition \\
 \newcommand{\datetext}[1]{%
 {\itshape  \footnotesize \mdseries  \color{black!60!\@themecolor} #1 } 
 }
+
 
 \newcommand{\datedexperience}[2]{%
   \begin{small} \mbox { \hspace{1em} \scshape \textbf{#1} } \end{small} \hfill \datetext{#2}\\[0.01cm] %

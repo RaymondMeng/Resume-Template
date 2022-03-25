@@ -1,12 +1,13 @@
 \documentclass{muratcan_cv}
-
-\setname{Murat Can}{Karacabey}
-\setaddress{Munich/Germany}
-\setmobile{xx xxx xx xx}
-\setmail{muratcankaracabey@gmail.com}
-\setposition{Work Student} %ignored for now
-\setlinkedinaccount{https://www.linkedin.com/in/murat-can-karacabey-568a96b1/} %you can play with color of the template (red is also nice..)
-\setgithubaccount{https://github.com/muratcankaracabey} %you can play with color of the template (red is also nice..)
+\usepackage {ctex}
+\usepackage[utf8]{inputenc}
+\setname{\textbf{\fontsize{22pt}{24pt}孟成}}{}
+\setaddress{湖北省武汉市}
+\setmobile{13696786574}
+\setmail{raymondmeng@foxmail.com}
+\setposition{本科三年级} %ignored for now
+\setlinkedinaccount{http://raymoncy.cn/} %you can play with color of the template (red is also nice..)
+\setgithubaccount{https://github.com/RaymondMeng} %you can play with color of the template (red is also nice..)
 \setthemecolor{red} %you can play with color of the template (red is also nice..)
 
 \begin{document}
@@ -19,79 +20,85 @@
 %
 % Summary
 \addblocktext{Summary}{%
-\lipsum[1][1-12]\ %replace this part with actual text
+ \fontsize{9pt}{24pt}对未知事物有着强烈的好奇心，有自我驱动的学习力和找到问题答案的能力。一直在奔跑，前往下一个未知点，不断探索！%replace this part with actual text
 }
 %
 %Education
 \section{Education} 
-    \datedexperience{Boğaziçi University}{2013-2018} 
-    \explanation{B.S in Computer Engineering} 
+    \datedexperience{\fontsize{10pt}{24pt}武汉理工大学 Wuhan University Of Technology}{2019.9-至今} 
+    \explanation{\fontsize{9pt}{24pt}通信工程，本科三年级在读} 
      \explanationdetail{\coloredbullet\ % 
-     \lipsum[1][3-4]\par %replace this part with actual text
+    {\fontsize{9pt}{24pt}获院三好学生，担任校电子科技协会副会长，GPA：3.327，CET-4} %replace this part with actual text
      }
-    \datedexperience{Technical University of Munich}{2019-2022} 
-    \explanation{M.S in Informatics} 
-    \explanationdetail{\coloredbullet\ %
-     \lipsum[1][3-4]\par %replace this part with actual text
+     \explanationdetail{\coloredbullet\ % 
+    {\fontsize{9pt}{24pt}\textbf{主攻方向：嵌入式应用、Cortex-M系列内核、FPGA逻辑设计、Hbirdv2-E203 RISC-V内核}} %replace this part with actual text
+     }
+     \explanationdetail{\coloredbullet\ % 
+    {\fontsize{9pt}{24pt}\textbf{期望研究方向：数字IC/SOC设计、可重构计算、并行加速、超标量处理器设计}} %replace this part with actual text
      }
 %
 % Experience
 \section{Experience}
     %
-    \datedexperience{Intertech Inc.}{2014-Summer / Turkey} 
-    \explanation{Intern as android developer} 
-    %
-    \datedexperience{Velocity Inc.}{2015-Summer / Turkey} 
-    \explanation{Intern as Developer/Tester} 
-    %
-    \datedexperience{Akbank}{2018-2019 / Turkey} 
-    \explanation{Ios Developer} 
+    \datedexperience{\fontsize{10pt}{24pt}基于机器视觉的管道焊缝检测系统}{2021} 
     \explanationdetail{\coloredbullet\ %
-     \lipsum[1][1-2]\par %replace this part with actual text
+     \fontsize{9pt}{24pt}利用训练好的mobilenet-yolov3神经网络识别焊缝质量，并实现嵌入式装置在管道上自动运行并实现上位机反馈 %replace this part with actual text
      }
     %
-    \datedexperience{Mobile-Software AG}{2019-2020 / Germany} 
-    \explanation{Ios Developer} 
+    \datedexperience{\fontsize{10pt}{24pt}基于平头哥的智能无线头盔设计}{2021} 
     \explanationdetail{\coloredbullet\ %
-     \lipsum[1][4-5]\par %replace this part with actual text
+     \fontsize{9pt}{24pt}利用平头哥WIFI RISC-V开发板与Digilent FPGA进行交互，完成环境数据的无线传输、无线图传等功能 %replace this part with actual text
      }
     %
-    \datedexperience{BMW Autonomous Driving Campus}{2020-Now / Germany} 
-    \explanation{Working Student} 
+    \datedexperience{\fontsize{10pt}{24pt}用电器分析检测装置}{2021} 
     \explanationdetail{\coloredbullet\ %
-     \lipsum[1][3-4]\par %replace this part with actual text
+     \fontsize{9pt}{24pt}利用电表芯片完成电网环境的检测分析，并通过数据处理分析用电器种类和数量，具有学习能力 %replace this part with actual text
+     }
+    %
+    \datedexperience{\fontsize{10pt}{24pt}多模态智能警务机器人}{2021-2022} 
+    \explanationdetail{\coloredbullet\ %
+     \fontsize{9pt}{24pt}通过实时识别目标人物的情绪、面目表情，并且提取脸部特征等多模态数据，配合服务器进行大数据分析比对，甄辨嫌疑人 %replace this part with actual text
+     }
+    %
+    \datedexperience{\fontsize{10pt}{24pt}一款配备Cache、支持RV64IM的RISC-V流水线的处理器设计（IC全栈式设计）}{2022.2-至今} 
+    \explanationdetail{\coloredbullet\ %
+     \fontsize{9pt}{24pt}参加中科院组织的“一生一芯”项目计划并通过预学习答辩，成为项目正式成员，项目进度目前处在单周期处理器设计阶段 %replace this part with actual text
      }
 %
 % Skills
 \section{Skills}
     %
-    \newcommand{\skillone}{\createskill{Programming Languages}{\textbf{\emph{Experienced:}} \ \  Python \cpshalf Swift \ \ \textbf{\emph{Familiar:}} \ \  Javascript \cpshalf Objective-C \cpshalf Bash \cpshalf Java \cpshalf Scheme}}
+    \newcommand{\skillone}{\createskill{\fontsize{9pt}{24pt}编程语言}{\textbf{\emph{Experienced:}} \ \  C/C++ \cpshalf Verilog HDL \cpshalf Python \ \ \textbf{\emph{Familiar:}} \ \  Bash \cpshalf Chisel \cpshalf System Verilog}}
     %
-    \newcommand{\skilltwo}{\createskill{Software Development}{Programming Paradigms \cpshalf GIT \cpshalf CLI \cpshalf Agile Methodology \cpshalf DevOps Lifecycles}}
+    \newcommand{\skilltwo}{\createskill{\fontsize{9pt}{24pt}开发平台}{Windows/Linux \cpshalf STM32 \cpshalf ESP系列 \cpshalf MSP432 \cpshalf FPGA/ZYNQ \cpshalf Raspberry Pi/Lichee Pi \cpshalf K210 \cpshalf Jetson Nano \cpshalf TXW8301}}
     %
-    \newcommand{\skillthree}{\createskill{Frameworks \ \& \ Libraries}{Jupyter \cpshalf Matplotplib \cpshalf Numpy \cpshalf Pandas \cpshalf Scikit-learn \cpshalf Gym \cpshalf PyTorch \cpshalf Tensorflow}}
+    \newcommand{\skillthree}{\createskill{\fontsize{9pt}{24pt}语言能力}{\fontsize{9pt}{24pt}英语具有良好的读写能力、通过CET-4}}
     %
-    \newcommand{\skillfour}{\createskill{iOS Programming}{RxSwift \cpshalf PromiseKit \cpshalf CocoaPods \cpshalf Autolayout/DSLs}}
-    %
-    \newcommand{\skillfive}{\createskill{Languages}{\textbf{\emph{Native:}} \ \  Turkish \ \ \textbf{\emph{Fluent:}} \ \ English \ \ \textbf{\emph{Beginner:}} \ \  German }}
-    %
-    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive}
+    \createskills{\skillone, \skilltwo, \skillthree}
 %
 % Experience
-\section{Extra}
+\section{Achievements}
     \newcommand{\extraone}{%
-    \lipsum[1][7-8]\par %replace this part with actual text
+    {\fontsize{9pt}{24pt}武汉理工大学校三等奖学金、院三好学生} \hfill \datetext{2020}%replace this part with actual text
     }
     %
     \newcommand{\extratwo}{%
-    \lipsum[1][9-10]\par %replace this part with actual text
+    {\fontsize{9pt}{24pt}全国大学生工程训练与综合能力竞赛 \qquad\qquad\qquad\qquad\qquad \textbf{全国二等奖}} \hfill \datetext{2021}%replace this part with actual text
     }
     %
     \newcommand{\extrathree}{%
-    \lipsum[1][11-12]%replace this part with actual text
+    {\fontsize{9pt}{24pt}"TI杯"全国大学生电子设计竞赛 \qquad\qquad\qquad\qquad\qquad\qquad\ \, \textbf{全国一等奖}} \hfill \datetext{2021}%replace this part with actual text
     }
     %
-    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree}
+    \newcommand{\extrafour}{%
+    {\fontsize{9pt}{24pt}第五届全国大学生集成电路创新创业大赛 \qquad\qquad\qquad\quad \ \ \textbf{全国三等奖}} \hfill \datetext{2021}%replace this part with actual text
+    }
+    %
+    \newcommand{\extrafive}{%
+    {\fontsize{9pt}{24pt}中国高校计算机大赛人工智能创意赛 \qquad\qquad\qquad\qquad\qquad \textbf{华中三等奖}} \hfill \datetext{2021}%replace this part with actual text
+    }
+    %
+    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree, \extrafour, \extrafive}
     %
     \createbullets{\listofextras}
 %
