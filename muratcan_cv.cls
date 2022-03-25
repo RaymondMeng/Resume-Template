@@ -69,7 +69,7 @@
     \savebox{\picbox}{%
     \includegraphics[scale=#1]{#2}}% 
     \tikz\node [draw, circle,%
-    line width=6pt, color=white,% 
+    line width=4pt, color=white,% 
     minimum width=\wd\picbox,minimum height=\ht\picbox,%
     path picture={ \node at (path picture bounding box.center)% 
     {\usebox{\picbox}};}]% 
