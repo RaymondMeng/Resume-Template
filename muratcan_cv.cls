@@ -32,7 +32,7 @@
 \newcommand*{\setposition}[1]{\def\@position{#1}}
 \newcommand*{\setmail}[1]{\def\@mail{#1}}
 \newcommand*{\setthemecolor}[1]{\def\@themecolor{#1}}
-\newcommand*{\setlinkedinaccount}[1]{\def\@linkedinaccount{#1}}
+\newcommand*{\setbloguarl}[1]{\def\@bloguarl{#1}}
 \newcommand*{\setgithubaccount}[1]{\def\@githubaccount{#1}}
 
 %Setup for coverletter
@@ -78,8 +78,8 @@
 %contactsubviews 
     
     
-\newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
-\newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
+\newcommand{\githubview}{\href{\@bloguarl}{\faFileText\ \footnotesize blog}}
+\newcommand{\blogview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 
 \newcommand{\name}{%
     {\large \@firstname \ \textsc{\@lastname}}
@@ -88,7 +88,7 @@
 \newcommand{\contact}{%
         {\small \@address  \cps \@mobile \\ \@mail%
         \\%
-        \linkedinview \cps \githubview \\ 
+        \blogview \cps \githubview \\ 
         } % 
 }
 
@@ -198,6 +198,6 @@ Position: & \@claimedposition \\
 \newcommand\createfootnote{%
   \renewcommand{\footnotesize}{\fontsize{7pt}{11pt}\selectfont}
     \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
-    \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/muratcankaracabey/latex_cv}{source code}}}
+    \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/RaymondMeng/Resume-Template}{source code}}}
 
 
