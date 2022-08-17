@@ -5,7 +5,7 @@
 
 ### How does it look?
 
-[![qUUxmD.png](https://s1.ax1x.com/2022/03/26/qUUxmD.png)](https://imgtu.com/i/qUUxmD)
+
 
 ### How to use it?
 - With minimum effort, you can use the [CV.tex](https://github.com/muratcankaracabey/latex_cv/blob/master/CV.tex) as it is provided with the high level functions such as ```\datedexperience```, ```\explanation```, ```\explanationdetail``` to add elements to your CV. You can create skill elements with ```\newcommand{\skillname{\createskill{<Skill Category>}{<explanation>}}}``` and finally create the list of skills with ```\createskills{<comma seperated skills list>}```. 
